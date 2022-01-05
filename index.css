@@ -1,0 +1,1639 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+
+@media screen and (min-width: 1320px)
+{
+
+    /* NAVIGATIONSLEISTE */
+
+    * {
+        box-sizing: border-box;
+    }
+
+    #navigation, label.navigation-label {
+        display: none;
+    }
+
+    label.navigation-label {
+        background: #c2def0;
+        color: white;
+        cursor: pointer;
+        display: block;
+        font-family: "Tenor Sans", sans-serif;
+        font-size: 18px;
+        padding: 20px;
+        position: relative;
+        text-align: center;
+    }
+
+    label.navigation-label:hover {
+        background: #99afbd;
+    }
+
+    label.navigation-label span {
+        margin-right: 10px;
+    }
+
+    nav {
+        background: #c2dff0;
+        float: right;
+        font-size: 18px;
+        font-family: "Tenor Sans", sans-serif;
+        padding: 10px;
+        position: absolute;
+        top: -9999px;
+        width: 100%;
+        z-index: 20;
+    }
+
+    input#navigation[type=checkbox]:checked ~ nav {
+        position: relative;
+        top: 0;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav a {
+        background:#c2dff0;
+        color: black;
+        display: block;
+        margin-bottom: 10px;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    nav li {
+        float: right;
+        list-style: none;
+        width: 100%;
+    }
+
+    nav ul li a:hover {
+        background: white;
+    }
+
+    nav ul ul {
+        font-size: small;
+        position: relative;
+        text-align: center;
+        width: 100%;
+    }
+
+    #thispage a {
+        background-color: white;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        background: #c2dff0;
+        color: lightgrey;
+        font-family: "Tenor Sans", sans-serif;
+        height: 60px;
+        margin-top: 50px;
+        padding-top: 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+    #footer a {
+        color: lightgrey;
+        font-family: "Tenor Sans", sans-serif;
+        font-size: 15px;
+        padding: 10px;
+        text-decoration: none;
+    }
+
+    #footer span {
+        color: lightgrey;
+        font-family: "Tenor Sans", sans-serif;
+        font-size: 15px;
+        padding-top: 10px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    #footer a:hover {
+        color: white;
+    }
+
+
+    /* FOOTER Angebote */
+
+    #footera {
+        background: #c2dff0;
+        text-align: center;
+        height: 60px;
+        margin-top: 500px;
+        width: 100%;
+        padding-top: 15px;
+        font-family: "Tenor Sans", sans-serif;
+        color: lightgrey;
+    }
+
+    #footera a {
+        font-family: "Tenor Sans", sans-serif;
+        font-size: 15px;
+        text-decoration: none;
+        color: lightgrey;
+        padding: 10px;
+    }
+
+    #footera span {
+        font-family: "Tenor Sans", sans-serif;
+        font-size: 15px;
+        text-align: center;
+        padding-top: 10px;
+        text-decoration: none;
+        color: lightgrey;
+    }
+
+    #footera a:hover {
+        color: white;
+    }
+
+
+    /* SLIDER */
+
+    #slider {
+        background-image: url("https://mars.iuk.hdm-stuttgart.de/~ag169/upload/Twitter.png");
+        background-size: cover;
+        height: 500px;
+        max-width: 100%;
+        padding: 30px;
+        position: relative;
+    }
+
+
+    /* ÜBERSCHRIFT */
+
+    #ueberschrift {
+        color: #c2dff0;
+        font-family: "Tenor Sans", sans-serif;
+        font-size: 30px;
+        text-align: center;
+    }
+
+
+    /* STYLE: STARTSEITE (uebermich.php) */
+
+    /* Content */
+
+    #content {
+        background: #c2dff0;
+        color: black;
+        font-family: "Comfortaa", cursive;
+        font-size: 16px;
+        line-height: 150%;
+        padding: 20px 100px 40px 100px;
+        text-align: center;
+        text-shadow: 1px 1px 3px black;
+    }
+
+    #content a {
+        color: black;
+        font-weight: bolder;
+        text-decoration: whitesmoke;
+    }
+
+    #content a:hover {
+        color: dimgrey;
+        font-weight: bolder;
+        text-decoration: lightgrey;
+    }
+
+
+    /* Wer bin Ich */
+
+    .alina {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 300px;
+        background-color: #c2dff0;
+        font-family: "Comfortaa", cursive;
+        font-size: 16px;
+    }
+
+    .text {
+        margin-top: 10px;
+        margin-bottom: 100px;
+        margin-left: 20px;
+        text-align: center;
+        width: 100%;
+        background: #c2dff0;
+        padding: 5px 100px 40px 100px;
+        font-family: "Comfortaa", cursive;
+        color: black;
+        text-shadow: 1px 1px 3px black;
+        line-height: 150%;
+        font-size: 16px;
+    }
+
+    .foto {
+        margin: 20px 30px 100px 100px;
+    }
+
+
+    /* Blogposts */
+
+    .left, .right {
+        float: left;
+        position: relative;
+        width: 49%;
+        height: 500px;
+        margin-right: 2%;
+        padding: 20px;
+        background: #eee;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .right {
+        margin-right: 0;
+    }
+
+    .left h3 {
+        font-family: "Tenor Sans", sans-serif;
+        color: #c2dff0;
+        font-size: 30px;
+        margin-top: 5px;
+    }
+
+    .right h3 {
+        font-family: "Tenor Sans", sans-serif;
+        color: #c2dff0;
+        font-size: 30px;
+        margin-top: 5px;
+    }
+
+    .left span {
+        font-family: "Tenor Sans", sans-serif;
+        color: #c2dff0;
+        font-size: 18px;
+        margin-top: 5px;
+    }
+
+    .right span {
+        font-family: "Tenor Sans", sans-serif;
+        color: #c2dff0;
+        font-size: 18px;
+        margin-top: 5px;
+    }
+
+    .left img {
+        margin-top: 20px;
+        max-height: 100px;
+        max-width: 100%;
+    }
+
+    .right img {
+        margin-top: 20px;
+        max-height: 100px;
+        max-width: 100%;
+    }
+
+
+    /* STYLE: IMPRESSUM */
+
+    /* Content */
+
+    #impressum {
+        background: #ECECEC;
+        text-align: left;
+        margin: 20px 50px 20px 50px;
+        font-family: "Tenor Sans", sans-serif;
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    #impressum a {
+        color: #c2dff0;
+    }
+
+    #impressum a:hover {
+        color: saddlebrown;
+    }
+
+    #impressum u {
+        font-size: large;
+    }
+
+
+    /* STYLE: BENUTZER */
+
+    /* Nicht autorisiert */
+
+    #nichtautorisiert {
+        background: #ECECEC;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 50px;
+        font-family: "Tenor Sans", sans-serif;
+        padding: 20px 24px 20px 24px;
+        color: black;
+        text-align: center;
+    }
+
+    #nichteingeloggt p {
+        background: #ECECEC;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: -10px;
+        font-family: "Tenor Sans", sans-serif;
+        padding-left: 24px;
+        padding-bottom: 20px;
+        padding-right: 24px;
+        color: black;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    #nichteingeloggt a {
+        color: #c2dff0;
+    }
+
+    #nichteingeloggt a:hover {
+        color: saddlebrown;
+    }
+
+
+    /* Benutzer Willkommensbereich */
+
+    #benutzer {
+        background: #ECECEC;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 50px;
+        font-family: "Tenor Sans", sans-serif;
+        padding: 20px 24px 20px 24px;
+        color: black;
+        text-align: center;
+    }
+
+
+    /* Login & Registierungs-Formular */
+
+    #login {
+        font-family: "Comfortaa", cursive;
+        color: white;
+        text-shadow: 1px 1px 3px black;
+        background: #c2dff0;
+        text-align: center;
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-top: 20px;
+        padding: 20px 30px 30px 30px;
+        font-size: 20px;
+        border-radius: 25px;
+    }
+
+    #login button {
+        font-family: "Comfortaa", cursive;
+        height: 30px;
+        width: 100px;
+        font-size: 15px;
+        border-radius: 10px;
+        background-color: white;
+        margin-top: 20px;
+    }
+
+    #login fieldset {
+        border-radius: 25px;
+    }
+
+    #login textarea {
+        border-radius: 25px;
+    }
+
+    #login input {
+        font-family: "Tenor Sans", sans-serif;
+        height: 30px;
+        width: 200px;
+        font-size: 15px;
+        border-radius: 10px;
+        background-color: white;
+        margin-top: 10px;
+    }
+
+    #login #Bild {
+        font-family: "Tenor Sans", sans-serif;
+        height: 20px;
+        width: min-content;
+        font-size: 15px;
+        border-radius: 5px;
+        background-color: white;
+        margin-top: 10px;
+        padding-left: 20px;
+    }
+
+
+    /* ANGEBOTE HINZUFÜGEN / ÄNDERN */
+
+    /* Angebot hinzufügen & ändern Formular */
+
+    #neuerpost {
+        font-family: "Tenor Sans", sans-serif;
+        color: #c2dff0;
+        border-color: #ECECEC;
+        background: white;
+        text-align: center;
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-top: 100px;
+        padding: 20px 30px 30px 30px;
+        font-size: 20px;
+        border-radius: 25px;
+    }
+
+    #neuerpost button {
+        font-family: "Tenor Sans", sans-serif;
+        height: 30px;
+        width: 90px;
+        font-size: 15px;
+        border-radius: 10px;
+        background-color: #c2dff0;
+        margin-top: 20px;
+    }
+
+    #neuerpost fieldset {
+        border-radius: 25px;
+    }
+
+    #neuerpost input {
+        font-family: "Tenor Sans", sans-serif;
+        height: 30px;
+        width: 200px;
+        font-size: 15px;
+        border-radius: 10px;
+        background-color: white;
+        margin-top: 10px;
+    }
+
+    #neuerpost #Bild {
+        font-family: "Tenor Sans", sans-serif;
+        height: 20px;
+        width: min-content;
+        font-size: 15px;
+        border-radius: 5px;
+        background-color: white;
+        margin-top: 10px;
+        padding-left: 20px;
+    }
+
+    #neuerpost textarea {
+        font-family: "Tenor Sans", sans-serif;
+        height: 300px;
+        width: 500px;
+        font-size: 15px;
+        border-radius: 10px;
+        background-color: white;
+        margin-top: 10px;
+    }
+
+
+    /* ANGEBOTE (index.php) */
+
+    /* Blogposts */
+
+    #angebote h3 {
+        color: #c2dff0;
+        font-family: "Tenor Sans", sans-serif;
+        font-size: 30px;
+        margin-top: 5px;
+    }
+
+    #angebote span {
+        color: #c2dff0;
+        font-family: "Comfortaa", cursive;
+        font-size: 18px;
+        margin-top: 5px;
+        padding-left: 200px;
+        padding-right: 200px;
+        text-align: center;
+    }
+
+    #angebote img {
+        height: 300px;
+        margin-top: 20px;
+        max-width: 100%;
+    }
+
+    #angebote {
+        background: #ECECEC;
+        color: black;
+        font-family: "Tenor Sans", sans-serif;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 50px;
+        padding: 20px 100px 20px 100px;
+        text-align: center;
+    }
+
+    #angebote a {
+        color: #c2dff0;
+        text-decoration: none;
+    }
+
+    #angebote a:hover {
+        color: saddlebrown;
+    }
+}
+
+
+
+
+
+
+
+
+/* PLATZHALTER */
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1320px) and (min-width: 700px)
+{
+
+    /* NAVIGATIONSLEISTE */
+
+    * {
+        box-sizing: border-box;
+    }
+
+    #navigation, label.navigation-label {
+        display: none;
+    }
+
+    label.navigation-label {
+        background: #c2dff0;
+        cursor: pointer;
+        color: #fff;
+        display: block;
+        font-family: "Tenor Sans", sans-serif;
+        font-size: 18px;
+        padding: 20px;
+        position: relative;
+        text-align: center;
+    }
+
+    label.navigation-label:hover {
+        background: #99afbd;
+    }
+
+    label.navigation-label span {
+        margin-right: 10px;
+    }
+
+    nav {
+        background: #ECECEC;
+        float: right;
+        font-size: 18px;
+        font-family: "Tenor Sans", sans-serif;
+        padding: 10px;
+        position: absolute;
+        top: -9999px;
+        width: 100%;
+        z-index: 20;
+    }
+
+    input#navigation[type=checkbox]:checked ~ nav {
+        position: relative;
+        top: 0;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav a {
+        display: block;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        margin-bottom: 10px;
+        padding: 10px 20px;
+        background: #ECECEC;
+    }
+
+    nav li {
+        width: 100%;
+        list-style: none;
+        float: right;
+    }
+
+    nav ul li a:hover {
+        background: white;
+    }
+
+    nav ul ul {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        font-size: small;
+    }
+
+    #thispage a {
+        background-color: white;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        background: #c2dff0;
+        text-align: center;
+        height: 60px;
+        width: 100%;
+        margin-top: 50px;
+        padding-top: 15px;
+        font-family: "Tenor Sans", sans-serif;
+        color: lightgrey;
+    }
+
+    #footer a {
+        font-family: "Tenor Sans", sans-serif;
+        font-size: 15px;
+        text-decoration: none;
+        color: lightgrey;
+        padding: 10px;
+    }
+
+    #footer span {
+        font-family: "Tenor Sans", sans-serif;
+        font-size: 15px;
+        text-align: center;
+        padding-top: 10px;
+        text-decoration: none;
+        color: lightgrey;
+    }
+
+    #footer a:hover {
+        color: white;
+    }
+
+
+    /* FOOTER Angebote */
+
+    #footera {
+        background: #c2dff0;
+        text-align: center;
+        height: 60px;
+        margin-top: -15px;
+        width: 100%;
+        padding-top: 15px;
+        font-family: "Tenor Sans", sans-serif;
+        color: lightgrey;
+    }
+
+    #footera a {
+        font-family: "Tenor Sans", sans-serif;
+        font-size: 15px;
+        text-decoration: none;
+        color: lightgrey;
+        padding: 10px;
+    }
+
+    #footera span {
+        font-family: "Tenor Sans", sans-serif;
+        font-size: 15px;
+        text-align: center;
+        padding-top: 10px;
+        text-decoration: none;
+        color: lightgrey;
+    }
+
+    #footera a:hover {
+        color: white;
+    }
+
+
+    /* SLIDER */
+
+    #slider {
+        padding: 30px;
+        height: 500px;
+        max-width: 100%;
+        background-image: url("https://mars.iuk.hdm-stuttgart.de/~ag169/upload/Twitter.png");
+        background-size: cover;
+        position: relative;
+
+    }
+
+
+    /* ÜBERSCHRIFT */
+
+    #ueberschrift {
+        font-family: "Tenor Sans", sans-serif;
+        color: #c2dff0;
+        font-size: 30px;
+        text-align: center;
+    }
+
+
+    /* STYLE: STARTSEITE */
+
+    /* Content */
+
+    #content {
+        background: #c2dff0;
+        text-align: center;
+        padding: 20px 100px 40px 100px;
+        font-family: "Comfortaa", cursive;
+        color: black;
+        text-shadow: 1px 1px 3px black;
+        line-height: 150%;
+        font-size: 16px;
+    }
+
+    #content a {
+        text-decoration: whitesmoke;
+        font-weight: bolder;
+        color: black;
+    }
+
+    #content a:hover {
+        text-decoration: lightgrey;
+        font-weight: bolder;
+        color: dimgrey;
+    }
+
+
+    /* Wer bin Ich */
+
+    .text {
+        margin-top: 10px;
+        margin-bottom: 100px;
+        margin-left: 10px;
+        text-align: center;
+        width: 100%;
+        background-color: #c2dff0;
+        padding: 20px 100px 20px 100px;
+        font-family: "Comfortaa", cursive;
+        color: white;
+        text-shadow: 1px 1px 3px black;
+        line-height: 150%;
+        font-size: 16px;
+    }
+
+    .foto {
+        margin: 20px;
+        text-align: center;
+    }
+
+
+    /* Blogposts */
+
+    .left, .right {
+        width: 100%;
+        height: 500px;
+        margin-right: 2%;
+        padding: 20px;
+        background: #eee;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+
+    .right {
+        margin-right: 0;
+    }
+
+    .left h3 {
+        font-family: "Tenor Sans", sans-serif;
+        color: #c2dff0;
+        font-size: 30px;
+        margin-top: 5px;
+    }
+
+    .right h3 {
+        font-family: "Tenor Sans", sans-serif;
+        color: #c2dff0;
+        font-size: 30px;
+        margin-top: 5px;
+    }
+
+    .left span {
+        font-family: "Tenor Sans", sans-serif;
+        color: #c2dff0;
+        font-size: 18px;
+        margin-top: 5px;
+    }
+
+    .right span {
+        font-family: "Tenor Sans", sans-serif;
+        color: #c2dff0;
+        font-size: 18px;
+        margin-top: 5px;
+    }
+
+    .left img {
+        margin-top: 20px;
+        max-height: 100px;
+        max-width: 100%;
+    }
+
+    .right img {
+        margin-top: 20px;
+        max-height: 100px;
+        max-width: 100%;
+    }
+
+
+    /* STYLE: IMPRESSUM */
+
+    /* Content */
+
+    #impressum {
+        background: #ECECEC;
+        text-align: left;
+        margin: 20px 50px 20px 50px;
+        font-family: "Tenor Sans", sans-serif;
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    #impressum a {
+        color: #c2dff0;
+    }
+
+    #impressum a:hover {
+        color: saddlebrown;
+    }
+
+    #impressum u {
+        font-size: large;
+    }
+
+
+    /* STYLE: BENUTZER */
+
+    /* Nicht autorisiert */
+
+    #nichtautorisiert {
+        background: #ECECEC;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 50px;
+        font-family: "Tenor Sans", sans-serif;
+        padding: 20px 24px 20px 24px;
+        color: black;
+        text-align: center;
+    }
+
+    #nichteingeloggt p {
+        background: #ECECEC;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: -10px;
+        font-family: "Tenor Sans", sans-serif;
+        padding-left: 24px;
+        padding-bottom: 20px;
+        padding-right: 24px;
+        color: black;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    #nichteingeloggt a {
+        color: #c2dff0;
+    }
+
+    #nichteingeloggt a:hover {
+        color: saddlebrown;
+    }
+
+
+    /* Benutzer Willkommensbereich */
+
+    #benutzer {
+        background: #ECECEC;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 50px;
+        font-family: "Tenor Sans", sans-serif;
+        padding: 20px 24px 20px 24px;
+        color: black;
+        text-align: center;
+    }
+
+
+    /* Login & Registierungs-Formular */
+
+    #login {
+        font-family: "Comfortaa", cursive;
+        color: white;
+        text-shadow: 1px 1px 3px black;
+        background: #473e4f;
+        text-align: center;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 20px;
+        padding: 20px 30px 30px 30px;
+        font-size: 20px;
+        border-radius: 25px;
+    }
+
+    #login button {
+        font-family: "Comfortaa", cursive;
+        height: 30px;
+        width: 100px;
+        font-size: 15px;
+        border-radius: 10px;
+        background-color: white;
+        margin-top: 20px;
+    }
+
+    #login fieldset {
+        border-radius: 25px;
+    }
+
+    #login textarea {
+        border-radius: 25px;
+    }
+
+    #login input {
+        font-family: "Tenor Sans", sans-serif;
+        height: 30px;
+        width: 200px;
+        font-size: 15px;
+        border-radius: 10px;
+        background-color: white;
+        margin-top: 10px;
+    }
+
+    #login #Bild {
+        font-family: "Tenor Sans", sans-serif;
+        height: 20px;
+        width: min-content;
+        font-size: 15px;
+        border-radius: 5px;
+        background-color: white;
+        margin-top: 10px;
+        padding-left: 20px;
+    }
+
+
+    /* ANGEBOTE HINZUFÜGEN / ÄNDERN */
+
+    /* Angebot hinzufügen & ändern Formular */
+
+    #neuerpost {
+        font-family: "Tenor Sans", sans-serif;
+        color: #c2dff0;
+        border-color: #ECECEC;
+        background: white;
+        text-align: center;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 100px;
+        padding: 20px 30px 30px 30px;
+        font-size: 20px;
+        border-radius: 25px;
+    }
+
+    #neuerpost button {
+        font-family: "Tenor Sans", sans-serif;
+        height: 30px;
+        width: 90px;
+        font-size: 15px;
+        border-radius: 10px;
+        background-color: #473e4f;
+        margin-top: 20px;
+    }
+
+    #neuerpost fieldset {
+        border-radius: 25px;
+    }
+
+    #neuerpost input {
+        font-family: "Tenor Sans", sans-serif;
+        height: 30px;
+        width: 200px;
+        font-size: 15px;
+        border-radius: 10px;
+        background-color: white;
+        margin-top: 10px;
+    }
+
+    #neuerpost #Bild {
+        font-family: "Tenor Sans", sans-serif;
+        height: 20px;
+        width: min-content;
+        font-size: 15px;
+        border-radius: 5px;
+        background-color: white;
+        margin-top: 10px;
+        padding-left: 20px;
+    }
+
+    #neuerpost textarea {
+        font-family: "Tenor Sans", sans-serif;
+        height: 300px;
+        width: 500px;
+        font-size: 15px;
+        border-radius: 10px;
+        background-color: white;
+        margin-top: 10px;
+    }
+
+
+    /* ANGEBOTE (index.php) */
+
+    /* Blogposts */
+
+    #angebote h3 {
+        font-family: "Tenor Sans", sans-serif;
+        color: #c2dff0;
+        font-size: 30px;
+        margin-top: 5px;
+    }
+
+    #angebote span {
+        font-family: "Comfortaa", cursive;
+        color: #c2dff0;
+        font-size: 18px;
+        margin-top: 5px;
+        padding-left: 100px;
+        padding-right: 100px;
+        text-align: center;
+    }
+
+    #angebote img {
+        margin-top: 20px;
+        height: 300px;
+        max-width: 100%;
+    }
+
+    #angebote {
+        background: #ECECEC;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 50px;
+        font-family: "Tenor Sans", sans-serif;
+        padding: 20px 100px 20px 100px;
+        color: black;
+        text-align: center;
+    }
+
+    #angebote a {
+        text-decoration: none;
+        color: #c2dff0;
+    }
+
+    #angebote a:hover {
+        color: saddlebrown;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px)
+{
+
+    /* NAVIGATIONSLEISTE */
+
+    * {
+        box-sizing: border-box;
+    }
+
+    #navigation, label.navigation-label {
+        display: none;
+    }
+
+    label.navigation-label {
+        position: relative;
+        text-align: center;
+        display: block;
+        padding: 20px;
+        background: #c2dff0;
+        cursor: pointer;
+        color: #fff;
+        font-family: "Tenor Sans", sans-serif;
+        font-size: 18px;
+    }
+
+    label.navigation-label:hover {
+        background: #99afbd;
+    }
+
+    label.navigation-label span {
+        margin-right: 10px;
+    }
+
+    nav {
+        position: absolute;
+        top: -9999px;
+        padding: 10px;
+        float: right;
+        width: 100%;
+        background: #ECECEC;
+        font-size: 18px;
+        font-family: "Tenor Sans", sans-serif;
+        z-index: 20;
+    }
+
+    input#navigation[type=checkbox]:checked ~ nav {
+        position: relative;
+        top: 0;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav a {
+        display: block;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        margin-bottom: 10px;
+        padding: 10px 20px;
+        background: #ECECEC;
+    }
+
+    nav li {
+        width: 100%;
+        list-style: none;
+        float: right;
+    }
+
+    nav ul li a:hover {
+        background: white;
+    }
+
+    nav ul ul {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        font-size: small;
+    }
+
+    #thispage a {
+        background-color: white;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        background: #c2dff0;
+        text-align: center;
+        height: 60px;
+        width: 100%;
+        margin-top: 50px;
+        padding-top: 15px;
+        font-family: "Tenor Sans", sans-serif;
+        color: lightgrey;
+    }
+
+    #footer a {
+        font-family: "Tenor Sans", sans-serif;
+        font-size: 15px;
+        text-decoration: none;
+        color: lightgrey;
+        padding: 10px;
+    }
+
+    #footer span {
+        font-family: "Tenor Sans", sans-serif;
+        font-size: 15px;
+        text-align: center;
+        padding-top: 10px;
+        text-decoration: none;
+        color: lightgrey;
+    }
+
+    #footer a:hover {
+        color: white;
+    }
+
+
+    /* FOOTER Angebote */
+
+    #footera {
+        background: #c2dff0;
+        text-align: center;
+        height: 60px;
+        margin-top: -15px;
+        width: 100%;
+        padding-top: 15px;
+        font-family: "Tenor Sans", sans-serif;
+        color: lightgrey;
+    }
+
+    #footera a {
+        font-family: "Tenor Sans", sans-serif;
+        font-size: 15px;
+        text-decoration: none;
+        color: lightgrey;
+        padding: 10px;
+    }
+
+    #footera span {
+        font-family: "Tenor Sans", sans-serif;
+        font-size: 15px;
+        text-align: center;
+        padding-top: 10px;
+        text-decoration: none;
+        color: lightgrey;
+    }
+
+    #footera a:hover {
+        color: white;
+    }
+
+
+    /* SLIDER */
+
+    #slider {
+        padding: 30px;
+        height: 500px;
+        max-width: 100%;
+        background-image: url("https://mars.iuk.hdm-stuttgart.de/~ag169/upload/Twitter.png");
+        background-size: cover;
+        position: relative;
+
+    }
+
+
+    /* ÜBERSCHRIFT */
+
+    #ueberschrift {
+        font-family: "Tenor Sans", sans-serif;
+        color: #c2dff0;
+        font-size: 30px;
+        text-align: center;
+    }
+
+
+    /* STYLE: STARTSEITE */
+
+    /* Content */
+
+    #content {
+        background: #c2dff0;
+        text-align: center;
+        padding: 20px 50px 40px 50px;
+        font-family: "Comfortaa", cursive;
+        color: white;
+        text-shadow: 1px 1px 3px black;
+        line-height: 150%;
+        font-size: 16px;
+    }
+
+    #content a {
+        text-decoration: whitesmoke;
+        font-weight: bolder;
+        color: black;
+    }
+
+    #content a:hover {
+        text-decoration: lightgrey;
+        font-weight: bolder;
+        color: dimgrey;
+    }
+
+
+    /* Wer bin Ich */
+
+    .text {
+        text-align: center;
+        width: 100%;
+        background-color: #c2dff0;
+        font-family: "Comfortaa", cursive;
+        color: white;
+        text-shadow: 1px 1px 3px black;
+        line-height: 150%;
+        font-size: 16px;
+        padding: 20px 50px 40px 50px;
+    }
+
+    .foto {
+        margin: 20px;
+        text-align: center;
+    }
+
+
+    /* Blogposts */
+
+    .left, .right {
+        width: 100%;
+        height: 500px;
+        margin-right: 2%;
+        padding: 20px;
+        background: #eee;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .right {
+        margin-right: 0;
+    }
+
+    .left h3 {
+        font-family: "Tenor Sans", sans-serif;
+        color: #c2dff0;
+        font-size: 30px;
+        margin-top: 5px;
+    }
+
+    .right h3 {
+        font-family: "Tenor Sans", sans-serif;
+        color: #c2dff0;
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+    .left span {
+        font-family: "Tenor Sans", sans-serif;
+        color: #c2dff0;
+        font-size: 18px;
+        margin-top: 5px;
+    }
+
+    .right span {
+        font-family: "Tenor Sans", sans-serif;
+        color: #c2dff0;
+        font-size: 18px;
+        margin-top: 5px;
+        padding-bottom: 150px;
+    }
+
+    .left img {
+        margin-top: 20px;
+        max-height: 100px;
+        max-width: 100%;
+    }
+
+    .right img {
+        margin-top: 20px;
+        max-height: 100px;
+        max-width: 100%;
+    }
+
+
+    /* STYLE: IMPRESSUM */
+
+    /* Content */
+
+    #impressum {
+        background: #ECECEC;
+        margin: 20px 50px 20px 50px;
+        font-family: "Tenor Sans", sans-serif;
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    #impressum a {
+        color: #c2dff0;
+    }
+
+    #impressum a:hover {
+        color: saddlebrown;
+    }
+
+    #impressum u {
+        font-size: large;
+    }
+
+
+    /* STYLE: BENUTZER */
+
+    /* Nicht autorisiert */
+
+    #nichtautorisiert {
+        background: #ECECEC;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 50px;
+        font-family: "Tenor Sans", sans-serif;
+        padding: 20px 24px 20px 24px;
+        color: black;
+        text-align: center;
+    }
+
+    #nichteingeloggt p {
+        background: #ECECEC;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: -10px;
+        font-family: "Tenor Sans", sans-serif;
+        padding-left: 24px;
+        padding-bottom: 20px;
+        padding-right: 24px;
+        color: black;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    #nichteingeloggt a {
+        color: #c2dff0;
+    }
+
+    #nichteingeloggt a:hover {
+        color: saddlebrown;
+    }
+
+
+    /* Benutzer Willkommensbereich */
+
+    #benutzer {
+        background: #ECECEC;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 50px;
+        font-family: "Tenor Sans", sans-serif;
+        padding: 20px 24px 20px 24px;
+        color: black;
+        text-align: center;
+    }
+
+
+    /* Login & Registierungs-Formular */
+
+    #login {
+        font-family: "Comfortaa", cursive;
+        color: white;
+        text-shadow: 1px 1px 3px black;
+        background: #c2dff0;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        padding: 20px 30px 30px 30px;
+        font-size: 20px;
+        border-radius: 25px;
+    }
+
+    #login button {
+        font-family: "Comfortaa", cursive;
+        height: 30px;
+        width: 100px;
+        font-size: 15px;
+        border-radius: 10px;
+        background-color: white;
+        margin-top: 20px;
+    }
+
+    #login fieldset {
+        border-radius: 25px;
+    }
+
+    #login textarea {
+        border-radius: 25px;
+    }
+
+    #login input {
+        font-family: "Tenor Sans", sans-serif;
+        height: 30px;
+        width: 100%;
+        font-size: 15px;
+        border-radius: 10px;
+        background-color: white;
+        margin-top: 10px;
+    }
+
+    #login #Bild {
+        font-family: "Tenor Sans", sans-serif;
+        height: 20px;
+        width: min-content;
+        font-size: 15px;
+        border-radius: 5px;
+        background-color: white;
+        margin-top: 10px;
+        padding-left: 20px;
+    }
+
+
+    /* ANGEBOTE HINZUFÜGEN / ÄNDERN */
+
+    /* Angebot hinzufügen & ändern Formular */
+
+    #neuerpost {
+        font-family: "Tenor Sans", sans-serif;
+        color: #c2dff0;
+        border-color: #ECECEC;
+        background: white;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 100px;
+        padding: 20px 30px 30px 30px;
+        font-size: 20px;
+        border-radius: 25px;
+    }
+
+    #neuerpost button {
+        font-family: "Tenor Sans", sans-serif;
+        height: 30px;
+        width: 90px;
+        font-size: 15px;
+        border-radius: 10px;
+        background-color: #473e4f;
+        margin-top: 20px;
+    }
+
+    #neuerpost fieldset {
+        border-radius: 25px;
+    }
+
+    #neuerpost input {
+        font-family: "Tenor Sans", sans-serif;
+        height: 30px;
+        width: 100%;
+        font-size: 15px;
+        border-radius: 10px;
+        background-color: white;
+        margin-top: 10px;
+    }
+
+    #neuerpost #Bild {
+        font-family: "Tenor Sans", sans-serif;
+        height: 20px;
+        width: min-content;
+        font-size: 15px;
+        border-radius: 5px;
+        background-color: white;
+        margin-top: 10px;
+        padding-left: 20px;
+        text-align: center;
+    }
+
+    #neuerpost textarea {
+        font-family: "Tenor Sans", sans-serif;
+        height: 300px;
+        width: 100%;
+        font-size: 15px;
+        border-radius: 10px;
+        background-color: white;
+        margin-top: 10px;
+    }
+
+
+
+
+    /* ANGEBOTE (index.php) */
+
+    /* Blogposts */
+
+    #angebote h3 {
+        font-family: "Tenor Sans", sans-serif;
+        color: #c2dff0;
+        font-size: 30px;
+        margin-top: 5px;
+    }
+
+    #angebote span {
+        font-family: "Comfortaa", cursive;
+        color: #c2dff0;
+        font-size: 18px;
+        margin-top: 5px;
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: center;
+    }
+    #angebote img {
+        margin-top: 20px;
+        height: 200px;
+        max-width: 100%;
+    }
+
+    #angebote {
+        background: #ECECEC;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 50px;
+        font-family: "Tenor Sans", sans-serif;
+        padding: 20px 100px 20px 100px;
+        color: black;
+        text-align: center;
+    }
+
+    #angebote a {
+        text-decoration: none;
+        color: #472c09;
+    }
+
+    #angebote a:hover {
+        color: saddlebrown;
+    }
+}
