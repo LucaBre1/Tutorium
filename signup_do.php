@@ -33,7 +33,7 @@ $fileType=substr($bildname, strlen($bildname)-4, strlen($bildname));
 if($fileType==".jpg" OR $fileType=="jpeg" OR $fileType==".JPG" OR $fileType=="JPEG" OR $fileType==".PNG" OR $fileType==".png"){
     $statement->bindParam(':bd', $bildname);;
 } else{
-    die("Dateiart nich zugelassen");
+    die("Dateiart nicht zugelassen");
 }
 
 if($_FILES["Bild"]["size"]>5000000){
